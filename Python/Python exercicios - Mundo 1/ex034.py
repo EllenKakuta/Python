@@ -1,4 +1,4 @@
-salarioAtual = float(input('Digite seu salário atual: '))
+salarioAtual = float(input('Digite seu salário atual: R$ '))
 aumento10 = salarioAtual *(10/100)
 aumento15 = salarioAtual*(15/100)
 if salarioAtual > 1250.00:

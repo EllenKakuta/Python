@@ -6,4 +6,4 @@ numero = int(input('Digite um número entre 0 e 5: '))
 if numero == computador:
     print('Parabéns, você acertou!!')
 else:
-    print('Não foi dessa vez....')
+    print('Não foi dessa vez, o número correto é {} ...'.format(computador))
