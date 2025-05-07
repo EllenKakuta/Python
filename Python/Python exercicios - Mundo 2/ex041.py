@@ -2,7 +2,7 @@
 #ATÉ 9 ANOS: MIRIM
 #ATÉ 14 ANOS: INFANTIL
 #ATÉ 19 ANOS: JUNIOR
-#ATÉ 20 ANOS: SÊNIOR
+#ATÉ 25 ANOS: SÊNIOR
 #ACIMA: MASTER
 
 import datetime
@@ -11,11 +11,11 @@ nascimento = int(input('Digite o ano de nascimento do atleta: '))
 idade = datetime.date.today().year - nascimento
 if idade <= 9:
     print('Atleta possui {} anos - Categoria Mirim'.format(idade))
-elif idade >9 and idade <=14:
+elif idade <=14:
     print('Atleta possui {} anos - Categoria Infantil'.format(idade))
-elif idade > 14 and idade <=19:
+elif idade <=19:
     print('Atleta possui {} anos - Categoria Júnior'.format(idade))
-elif idade == 20:
+elif idade <=25:
     print('Atleta possui {} anos - Categoria Sênior'.format(idade))
 else:
     print('Atleta possui {} anos - Categoria Master'.format(idade))

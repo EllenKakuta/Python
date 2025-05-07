@@ -6,7 +6,7 @@
 import datetime
 nascimento = int(input('Digite seu ano de nascimento: '))
 idade = datetime.date.today().year - nascimento
-# print(idade)
+# print(idade) - apenas para conferência
 if idade < 18:
     print('Você tem {} anos, ainda falta(m) {} ano(s) para poder se alistar no serviço militar'.format(idade, (18-idade)))
 elif idade == 18:
