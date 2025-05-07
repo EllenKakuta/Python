@@ -6,20 +6,34 @@
 
 precoNormal = float(input('Digite o valor do produto: R$ '))
 condicaoPagamento = int(input('Digite 1 para pagamento à vista e 2 para pagamento à prazo: '))
+
 if condicaoPagamento == 1:
-    int(input('1- Dinheiro \n' 
+    escolha = int(input('1- Dinheiro \n' 
     '2- Cheque \n' \
     '3- Cartão \n' \
     '-> '))
     dinheiro = precoNormal-(precoNormal*10/100)
     cheque = precoNormal-(precoNormal*10/100)
-    cartao = precoNormal-(precoNormal*5*100)
-    if condicaoPagamento ==1:
+    cartao = precoNormal-(precoNormal*5/100) 
+    if escolha == 1:
         print('Valor total a ser pago: R${:.2f}'.format(dinheiro))
-    elif condicaoPagamento ==2:
+    elif escolha == 2:
         print('Valor total a ser pago: R${:.2f}'.format(cheque))
-    elif condicaoPagamento ==3:
+    elif escolha == 3:
         print('Valor total a ser pago: R${:.2f}'.format(cartao))
     else:
         print('Opção inválida. Digite uma das 3 opções solicitadas')
-        
+elif condicaoPagamento == 2:
+    parcelas = int(input('Digite o número de parcelas: '))
+    duasParcelas = precoNormal
+    tresOuMais = precoNormal+(precoNormal*20/100)
+    if parcelas == 2:
+        print('Valor total a ser pago: R${:.2f}'.format(duasParcelas))
+        print('Cada parcela terá o valor de: R${:.2f}'.format(duasParcelas/2))
+    elif parcelas > 2:
+        print('Valor total a ser pago: R${:.2f}'.format(tresOuMais))
+        print('Cada parcela terá o valor de: R${:.2f}'.format(tresOuMais/parcelas))
+    else:
+        print('Opção inválida. escolha a opção de pagamento à vista!')
+else:
+    print('Opção inválida. Digite uma das 2 opções solicitadas')

@@ -7,11 +7,13 @@ valorDaCasa = float(input('Digite o valor da casa: R$'))
 salario = float(input('Digite o valor do seu salário: R$ '))
 anos = int(input('Em quantos anos será realizado o pagamento? '))
 parcelas = anos*12
-# print(parcelas)
+# print(parcelas) - coloquei apenas para conferência do cálculo
 valormensal = valorDaCasa/parcelas
-# print(valormensal)
+# print(valormensal)- coloquei apenas para conferência do cálculo
+trintaPorCento = salario*30/100
 
-if valormensal > (salario*30/100):
+if valormensal > (trintaPorCento):
     print ('O valor da parcela ultrapassa o limite permitido. Empréstimo negado')
+    print('Valor de cada parcela: R${:.2f}, esse valor excede 30% do seu salário que é R${:.2f}'.format(valormensal, trintaPorCento))
 elif valormensal <= (salario*30/100):
     print('Empréstimo aprovado, você pagará {} parcelas no valor de R${:.2f} cada'.format(parcelas,valormensal))
