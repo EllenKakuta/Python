@@ -1,6 +1,12 @@
 #CRIAR PROGRAMA QUE FAÇA O COMPUTADOR JOGAR JOKENPÔ COM O USUÁRIO
 
 import random
+import time
+
+# itens = ('Pedra', 'Papel', 'Tesoura')
+# computador = random.randint(0,2)
+# print('O computador escolheu {}'.format(itens[computador]))
+#MODELO EXPLICADO NA AULA, ONDE É POSSIVEL ALTERAR OS NÚMEROS DO RANDINT PARA OS ITENS DA VARIÁVEL
 
 print('****** J O K E N P Ô ******')
 usuario = int(input('Escolha una das opções abaixo: \n' \
@@ -8,6 +14,11 @@ usuario = int(input('Escolha una das opções abaixo: \n' \
 '2- PAPEL \n' \
 '3- TESOURA \n' \
 '-> '))
+# print('JO')
+# sleep(1)
+# print('KEN')
+# sleep(1)
+# print('PÔ!!')
 lista = [1,2,3]
 computador = random.choice(lista)
 if usuario ==1 and computador == 1:

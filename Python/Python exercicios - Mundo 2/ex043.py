@@ -6,8 +6,8 @@
 #ACIMA DE 40 - OBESIDADE MÓRBIDA
 
 print('***** CALCULE SEU IMC *****')
-peso = float(input('Digite seu peso: Kg '))
-altura = float(input('Digite sua altura: '))
+peso = float(input('Digite seu peso: (Kg) '))
+altura = float(input('Digite sua altura: (m) '))
 imc = peso/(altura*altura)
 if imc < 18.5:
     print('Seu IMC é: {:.1f} - ABAIXO DO PESO'.format(imc))
