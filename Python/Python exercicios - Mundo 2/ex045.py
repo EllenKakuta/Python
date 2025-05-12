@@ -14,11 +14,12 @@ usuario = int(input('Escolha una das opções abaixo: \n' \
 '2- PAPEL \n' \
 '3- TESOURA \n' \
 '-> '))
-# print('JO')
-# sleep(1)
-# print('KEN')
-# sleep(1)
-# print('PÔ!!')
+print('JO')
+time.sleep(1)
+print('KEN')
+time.sleep(1)
+print('PÔ!!')
+time.sleep(1)
 lista = [1,2,3]
 computador = random.choice(lista)
 if usuario ==1 and computador == 1:
