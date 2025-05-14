@@ -2,7 +2,7 @@
 
 import time
 
-for c in range(10,0,-1):
+for c in range(10,0,-1): #Se eu quiser utilizar o ZERO, coloco (10,-1,-1)
     print(c)
     time.sleep(1)
 print('F O G O S')

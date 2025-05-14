@@ -1,11 +1,11 @@
-#DESENVOLVA UM PROGRAMA QUE LEIA 6 NÚMEROS INTEIROS E MOSTRE A SOMA APENAS DAQUELES QUE FORME PARES. SE O VALOR DIGITADO FOR ÍMPAR, DESCONSIDERE-O
-s=0
+#DESENVOLVA UM PROGRAMA QUE LEIA 6 NÚMEROS INTEIROS E MOSTRE A SOMA APENAS DAQUELES QUE FOREM PARES. SE O VALOR DIGITADO FOR ÍMPAR, DESCONSIDERE-O
+soma=0
+cont=0
 print('Somador de número pares')
 for c in range(0,6):
     num= int(input('Digite um número: '))
     if num%2==0:
-        s+=num
-if num%2!=0:
-    print('Não foi digitado nenhum número par')
-print('A soma de todos os número pares é igual a: {}'.format(s))
+        soma+=num
+        cont+=1
+print('Você informou {} números pares e a soma deles é igual a: {}'.format(cont,soma))
     
