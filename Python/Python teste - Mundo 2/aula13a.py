@@ -1,4 +1,4 @@
-#LAÇOS DE REPETIÇÃO(PARTE1)
+#LAÇOS DE REPETIÇÃO(PARTE1) A estrutura FOR precisa de um limite 
 #LAÇO COM VARIÁVEL DE CONTROLE - Ex:
 # laço c no intervalo(1,10)
 #     passo
