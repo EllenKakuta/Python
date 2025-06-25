@@ -1,0 +1,70 @@
+'''
+VARIÁVEIS COMPOSTAS- LISTAS(PARTE1)
+-LISTAS PODEM SER MUTÁVEIS
+TUPLAS ()
+LISTAS []
+
+->APPEND()- ADICIONA NO FINAL DA LISTA
+->INSERT[0,'PRODUTO']- INSERE NA POSIÇÃO DESEJADA O PRODUTO
+->DEL.variavel[3] - VAI SER ELIMIDADO DO INDICE
+->variavel.POP(3)- TBM ELIMINA DO INDICE INFORMADO / USANDO POP ISOLADO (pop())- VAI REMOVER O ÚLTIMO ITEM
+->variavel.REMOVE('PRODUTO')- REMOVE DE ACORDO COM O NOME DO QUE QUER SER REMOVIDO
+* SÓ VAI REMOVER SE O PRODUTO ESTIVER DENTRO DA LISTA, CASO NÃO ESTEJA, DARÁ ERRO, POR ISSO É NECESSÁRIO FAZER UM IF
+    if pizza in lanche:
+        lanche.remove('pizza')
+
+valores=list(range(4,11))- cria uma lista iniciando no 4 e finalizando no 10 -> 4 5 6 7 8 9 10
+
+
+valores=[8,2,5,4,9,3,0]
+valores.sort() -> VAI COLOCAR EM ORDEM - 0,2,3,4,5,8,9
+PARA ORDEM INVERSA  
+valores.sort(reverse=True) - 9,8,5,4,3,2,0
+
+TAMANHO DA LISTA
+len(valores) = 7
+
+'''
+#PARTE PRÁTICA
+num=[2,5,9,1]
+num[2]=3
+num.append(7)
+num.sort()
+num.sort(reverse=True)
+num.insert(2,2)
+num.insert(2,0)
+num.remove(2) #remove a primeira ocorrência onde tem o número 2
+if 4 in num:
+    num.remove(4)
+else:
+    print('Não achei o número 4')
+num.pop()
+num.pop(2)
+print(num)
+print(f'Essa lista tem {len(num)} elementos')
+
+
+valores=[]
+valores.append(5)
+valores.append(9)
+valores.append(4)
+
+for v in valores:
+    print(f'{v}...')
+
+for c,v in enumerate(valores):
+    print(f'Na posição {c}, encontrei o valor {v}')
+print('Cheguei ao final da lista')
+
+for cont in range(0,5):
+    valores.append(int(input('Digite um valor: ')))
+for c,v in enumerate(valores):
+    print(f'Na posição {c}, encontrei o valor {v}')
+print('Cheguei ao final da lista')
+
+a=[2,3,4,7]
+b=a #fazendo uma ligação - usa os mesmos valores, mesmo se mudar só do b
+b=a[:] #cópia dos valores- não tem ligação
+b[2]=8
+print(f'Lista A: {a}')
+print(f'Lista B: {b}')
