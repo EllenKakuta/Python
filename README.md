@@ -30,7 +30,7 @@ Os arquivos estão organizados conforme o progresso no curso:
 - Editor: VS Code 
 - Curso em Vídeo como base didática
 
-##🧠 Progresso Atual
+## 🧠 Progresso Atual
 - ✅ Mundo 1 finalizado
 - ✅ Mundo 2 finalizado
 - 🟡 Estudando Mundo 3
