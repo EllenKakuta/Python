@@ -26,13 +26,13 @@ Os arquivos estão organizados conforme o progresso no curso:
 > ⚠️ Cada exercício está numerado conforme a proposta original do curso.
 
 ## 🛠 Tecnologias
-Python 3.x
-Editor: VS Code 
-Curso em Vídeo como base didática
+- Python 3.x
+- Editor: VS Code 
+- Curso em Vídeo como base didática
 
-🧠 Progresso Atual
-✅ Mundo 1 finalizado
-✅ Mundo 2 finalizado
-🟡 Estudando Mundo 3
-🔜 Início de projetos práticos com os conhecimentos adquiridos
+##🧠 Progresso Atual
+- ✅ Mundo 1 finalizado
+- ✅ Mundo 2 finalizado
+- 🟡 Estudando Mundo 3
+- 🔜 Início de projetos práticos com os conhecimentos adquiridos
 
