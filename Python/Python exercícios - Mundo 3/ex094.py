@@ -53,3 +53,9 @@ for p in acima_media:
 #             print(f'{k} = {v}', end='')
 #         print()
 
+
+'''
+Preciso criar um input para receber os números ou colocar direto na função
+
+dicionário com total, maior, menor, média e a situação 'razoável', 'boa', 'ruim'(opcional pelo show=True)
+'''

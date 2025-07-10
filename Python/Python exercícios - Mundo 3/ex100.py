@@ -1,8 +1,9 @@
 #FAÇA UM PROGRAMA QUE TENHA UMA LISTA CHAMADA NÚMEROS E DUAS FUNÇÕES CHAMADAS SORTEIO() E SOMAPAR(). A PRIMEIRA FUNÇÃO VAI SORTEAR 5 NÚMEROS E VAI COLOCÁ-LOS DENTRO DA LISTA E A SEGUNDA FUNÇÃO VAI MOSTRAR A SOMA ENTRE TODOS OS VALORES PARES SORTEADOS PELA FUNÇÃO ANTERIOR
 import random
+import time
 numeros=list()
 def sorteio():
-    for _ in range(0,6):
+    for _ in range(0,5):
         num=random.randint(0,100)
         numeros.append(num)
     print(f'Números sorteados:{numeros}')
@@ -17,3 +18,25 @@ def somaPar():
     print(f'A soma entre os números pares sorteados é: {soma}')
 
 somaPar()
+
+
+#CÓDIGO DA AULA DE CORREÇÃO
+# def sorteia(lista):
+#     print(f'Sorteando 5 valores da lista: ', end='')
+#     for cont in range(0,5):
+#         n=random.randint(1,10)
+#         lista.append(n)
+#         print(f'{n} ', end='', flush=True)
+#         time.sleep(0.3)
+#     print('Pronto!')
+
+# def somaPar(lista):
+#     soma=0
+#     for valor in lista:
+#         if valor % 2 == 0:
+#             soma+=valor
+#     print(f'Somando os valores pares de {lista}, temos {soma}')
+
+# numeros=list()
+# sorteia(numeros)
+# somaPar(numeros)
