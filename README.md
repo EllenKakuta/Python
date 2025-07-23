@@ -33,6 +33,6 @@ Os arquivos estão organizados conforme o progresso no curso:
 ## 🧠 Progresso Atual
 - ✅ Mundo 1 finalizado
 - ✅ Mundo 2 finalizado
-- 🟡 Estudando Mundo 3
+- 🟡 Mundo 3 finalizado
 - 🔜 Início de projetos práticos com os conhecimentos adquiridos
 
